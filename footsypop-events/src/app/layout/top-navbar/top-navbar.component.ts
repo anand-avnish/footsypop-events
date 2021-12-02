@@ -16,11 +16,11 @@ class TabModel {
 })
 export class TopNavbarComponent implements OnInit {
   navTabs: TabModel[] = [
-    new TabModel('Home', 'home', false),
-    new TabModel('About Us', 'about', false),
-    new TabModel('Services', 'service', false),
-    new TabModel('Gallery', 'gallery', false),
-    new TabModel('Contact', 'contact', false)
+    new TabModel('Home', '/home', true),
+    new TabModel('About Us', '/about', false),
+    new TabModel('Services', '/service', false),
+    new TabModel('Gallery', '/gallery', false),
+    new TabModel('Contact', '/contact', false)
   ];
 
   constructor(

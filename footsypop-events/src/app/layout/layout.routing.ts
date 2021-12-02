@@ -1,6 +1,5 @@
 import { Routes, RouterModule } from "@angular/router";
 import { LayoutComponent } from "./layout.component";
-// import { AuthGuard } from '../pages/login/auth-guard.service';
 
 
 const LAYOUT_ROUTES: Routes = [
@@ -14,23 +13,23 @@ const LAYOUT_ROUTES: Routes = [
 
       {
         path: "home",
-        loadChildren: "../pages/home/home.module#HomeModule"
+        loadChildren: () => import('src/app/pages/home/home.module').then(m => m.HomeModule)
       },
 			{
 				path: "about",
-				loadChildren: "../pages/requirements/requirements.module#RequirementsModule"
+				loadChildren: () => import('src/app/pages/about/about.module').then(m => m.AboutModule)
 			},
 			{
 				path: "service",
-				loadChildren: "../pages/requirements/create-job/create-job.module#CreateJobModule"
+				loadChildren: () => import('src/app/pages/service/service.module').then(m => m.ServiceModule)
 			},
       {
 				path: "gallery",
-				loadChildren: "../pages/requirements/create-jd/create-jd.module#CreateJdModule"
+				loadChildren: () => import('src/app/pages/gallery/gallery.module').then(m => m.GalleryModule)
 			},
 			{
 				path: "contact",
-				loadChildren: "../pages/requirements/req-details/req-details.module#ReqDetailsModule"
+				loadChildren: () => import('src/app/pages/contact/contact.module').then(m => m.ContactModule)
 			}
 		]
 	},

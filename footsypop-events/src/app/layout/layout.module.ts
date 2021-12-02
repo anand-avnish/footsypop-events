@@ -4,8 +4,6 @@ import { LayoutRoutingModule } from './layout.routing';
 import { LayoutComponent } from './layout.component';
 import { TopNavbarComponent } from './top-navbar/top-navbar.component';
 
-
-
 @NgModule({
   declarations: [
     TopNavbarComponent,
