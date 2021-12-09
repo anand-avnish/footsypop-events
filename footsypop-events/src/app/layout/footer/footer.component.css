@@ -1,0 +1,45 @@
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+.foot{
+  padding-top: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
+  background-color: rgb(29, 28, 28);
+  color: white;
+}
+
+.copy{
+  margin-top:20px;
+}
+
+.face{
+  color: rgb(206, 90, 23);
+  font-size:25px;
+}
+
+.social{
+  color: white;
+}
+
+.event{
+  color: rgb(206, 90, 23);
+  text-decoration: none;
+}
+
+.contact{
+  color: rgb(206, 90, 23);
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+.contactLink{
+  color: white;
+  text-decoration: none;
+}
+
+.cont{
+  margin-top:10px;
+}

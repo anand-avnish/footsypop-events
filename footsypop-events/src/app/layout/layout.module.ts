@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 import { LayoutRoutingModule } from './layout.routing';
 import { LayoutComponent } from './layout.component';
 import { TopNavbarComponent } from './top-navbar/top-navbar.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     TopNavbarComponent,
-    LayoutComponent
+    LayoutComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,

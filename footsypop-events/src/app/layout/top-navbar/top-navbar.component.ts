@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Params, Router } from '@angular/router';
 
 class TabModel {
   constructor(
@@ -23,11 +23,26 @@ export class TopNavbarComponent implements OnInit {
     new TabModel('Contact', '/contact', false)
   ];
 
+  parsedURL: any;
+
   constructor(
     private router:Router,
+    private actRoute: ActivatedRoute
   ){}
 
   ngOnInit(): void {
+    this.actRoute.params.subscribe((params: Params) => {
+      this.parsedURL = this.router.url.split('/');
+      console.log(`/${this.parsedURL[1]}`);
+    });
+
+    for(let tab of this.navTabs){
+      if(tab.routerPath == `/${this.parsedURL[1]}`){
+          tab.isActive = true;
+      } else {
+          tab.isActive = false;
+      }
+    }
   }
 
   linkClicked(link: string){
