@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { ServiceComponent } from './service.component';
 import { RouterModule } from '@angular/router';
 
+import {MatTabsModule} from '@angular/material/tabs';
+
 const route = [
   { path: '', component: ServiceComponent },
 ];
@@ -14,6 +16,7 @@ const route = [
   ],
   imports: [
     CommonModule,
+    MatTabsModule,
     RouterModule.forChild(route)
   ]
 })

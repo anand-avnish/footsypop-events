@@ -25,7 +25,7 @@ const LAYOUT_ROUTES: Routes = [
 			},
       {
 				path: "gallery",
-				loadChildren: () => import('src/app/pages/gallery/gallery.module').then(m => m.GalleryModule)
+				loadChildren: () => import('src/app/pages/gallery/gallery.module').then(m => m.GallModule)
 			},
 			{
 				path: "contact",

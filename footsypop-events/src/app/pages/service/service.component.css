@@ -1,0 +1,121 @@
+.tabs{
+  background-color: black;
+  color: white !important;
+}
+
+::ng-deep .mat-tab-label{
+  color:rgb(206, 90, 23) !important;
+}
+
+.tab{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.headerImg{
+  width: 100%;
+  height: 30vh;
+}
+
+.header{
+  width: 100%;
+  height: 35vh;
+  background-image: url("../../../assets/birthday.jpg");
+  background-size:cover;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header2{
+  width: 100%;
+  height: 35vh;
+  background-image: url("../../../assets/wedding.jpg");
+  background-size:cover;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header3{
+  width: 100%;
+  height: 35vh;
+  background-image: url("../../../assets/corporate.png");
+  background-size:cover;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header4{
+  width: 100%;
+  height: 35vh;
+  background-image: url("../../../assets/eng.jpg");
+  background-size:cover;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title{
+  color: #fc575e;
+  font-style: italic;
+  /* font-family:'Courier New', Courier, monospace; */
+  font-family: 'Courgette', cursive;
+  font-size: 80px;
+  margin: auto;
+  text-shadow: black 2px 2px 1px;
+  /* vertical-align: middle; */
+}
+
+.main{
+  /* height:120vh; */
+  background-color: black;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.main2{
+  /* height:120vh; */
+  background: radial-gradient(circle, rgba(250,122,76,1) 0%, rgba(255,255,255,1) 54%);
+  color: black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.video{
+  box-shadow: 10px 10px 5px #f8f4f3;
+  width: 90%;
+}
+
+.heading{
+  color: #fc575e;
+  /* font-style: italic; */
+  font-family: 'Roboto', sans-serif;
+  text-shadow: black 1px 1px 1px;
+  /* text-shadow: 4px 4px 2px #FA7A4C; */
+}
+
+.heading2{
+  color: #fc575e;
+  /* font-style: italic; */
+  font-family: 'Roboto', sans-serif;
+  text-shadow: white 1px 1px 1px;
+  /* text-shadow: 4px 4px 2px #FA7A4C; */
+}
+
+.event{
+  text-align:center;
+  margin-bottom:10px;
+}
+
+.list{
+  font-size: x-large;
+  color:#FA7A4C;
+  text-align: left;
+}

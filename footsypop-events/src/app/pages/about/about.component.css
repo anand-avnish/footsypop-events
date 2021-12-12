@@ -18,11 +18,25 @@
   color: white;
 }
 
+/* .logo{
+  border-bottom: black solid;
+  box-shadow: black 3px 0px 2px;
+} */
+
+.blackO{
+  height: 100%;
+  width: 100%;
+  /* background-color: black;
+  opacity: 0.4; */
+  /* z-index: 999; */
+}
+
 .head{
   color: #fc575e;
   font-style: italic;
   /* font-family:'Courier New', Courier, monospace; */
   font-family: 'Courgette', cursive;
+  text-shadow: black 2px 2px 1px;
   font-size: 60px;
 }
 
@@ -77,6 +91,15 @@
   color: #fc575e;
   /* font-style: italic; */
   font-family: 'Roboto', sans-serif;
+  text-shadow: black 1px 1px 1px;
+  /* text-shadow: 4px 4px 2px #FA7A4C; */
+}
+
+.heading2{
+  color: #fc575e;
+  /* font-style: italic; */
+  font-family: 'Roboto', sans-serif;
+  text-shadow: white 1px 1px 1px;
   /* text-shadow: 4px 4px 2px #FA7A4C; */
 }
 
