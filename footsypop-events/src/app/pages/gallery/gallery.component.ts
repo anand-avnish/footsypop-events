@@ -10,9 +10,15 @@ import { Lightbox } from 'ng-gallery/lightbox';
 })
 export class GalleryComponent implements OnInit {
 
-  items: GalleryItem[] = [];
+  weddingItems: GalleryItem[] = [];
+  birthdayItems: GalleryItem[] = [];
+  corporateItems: GalleryItem[] = [];
+  societalItems: GalleryItem[] = [];
 
-  imageData = data;
+  weddingData = data1;
+  birthdayData = data2;
+  corporateData = data3;
+  societalData = data4;
 
   constructor(public gallery: Gallery, public lightbox: Lightbox) {
   }
@@ -22,8 +28,10 @@ export class GalleryComponent implements OnInit {
     /** Basic Gallery Example */
 
     // Creat gallery items
-    this.items = this.imageData.map(item => new ImageItem({ src: item.srcUrl, thumb: item.previewUrl }));
-
+    this.weddingItems = this.weddingData.map(item => new ImageItem({ src: item.srcUrl, thumb: item.previewUrl }));
+    this.birthdayItems = this.birthdayData.map(item => new ImageItem({ src: item.srcUrl, thumb: item.previewUrl }));
+    this.corporateItems = this.corporateData.map(item => new ImageItem({ src: item.srcUrl, thumb: item.previewUrl }));
+    this.societalItems = this.societalData.map(item => new ImageItem({ src: item.srcUrl, thumb: item.previewUrl }));
 
     /** Lightbox Example */
 
@@ -32,16 +40,16 @@ export class GalleryComponent implements OnInit {
 
     // Add custom gallery config to the lightbox (optional)
     lightboxRef.setConfig({
-      imageSize: ImageSize.Cover,
+      imageSize: ImageSize.Contain,
       thumbPosition: ThumbnailsPosition.Top
     });
 
     // Load items into the lightbox gallery ref
-    lightboxRef.load(this.items);
+    lightboxRef.load(this.weddingItems);
   }
 }
 
-const data = [
+const data1 = [
   {
     srcUrl: '../../../assets/1 (1).jpeg',
     previewUrl: '../../../assets/1 (1).jpeg'
@@ -67,9 +75,22 @@ const data = [
     previewUrl: '../../../assets/1 (6).jpeg'
   },
   {
-    srcUrl: '../../../assets/1 (7).jpeg',
-    previewUrl: '../../../assets/1 (7).jpeg'
+    srcUrl: '../../../assets/1 (1).jpeg',
+    previewUrl: '../../../assets/1 (1).jpeg'
   },
+  {
+    srcUrl: '../../../assets/1 (15).jpeg',
+    previewUrl: '../../../assets/1 (15).jpeg'
+  },
+  {
+    srcUrl: '../../../assets/1 (16).jpeg',
+    previewUrl: '../../../assets/1 (16).jpeg'
+  },
+
+
+];
+
+const data2 = [
   {
     srcUrl: '../../../assets/1 (8).jpeg',
     previewUrl: '../../../assets/1 (8).jpeg'
@@ -82,9 +103,13 @@ const data = [
     srcUrl: '../../../assets/1 (10).jpeg',
     previewUrl: '../../../assets/1 (10).jpeg'
   },
+
+];
+
+const data3 = [
   {
-    srcUrl: '../../../assets/1 (11).jpeg',
-    previewUrl: '../../../assets/1 (11).jpeg'
+    srcUrl: '../../../assets/1 (7).jpeg',
+    previewUrl: '../../../assets/1 (7).jpeg'
   },
   {
     srcUrl: '../../../assets/1 (12).jpeg',
@@ -98,12 +123,16 @@ const data = [
     srcUrl: '../../../assets/1 (14).jpeg',
     previewUrl: '../../../assets/1 (14).jpeg'
   },
+];
+
+const data4 = [
   {
-    srcUrl: '../../../assets/1 (15).jpeg',
-    previewUrl: '../../../assets/1 (15).jpeg'
+    srcUrl: '../../../assets/1 (1).jpeg',
+    previewUrl: '../../../assets/1 (1).jpeg'
   },
+
   {
-    srcUrl: '../../../assets/1 (16).jpeg',
-    previewUrl: '../../../assets/1 (16).jpeg'
+    srcUrl: '../../../assets/1 (11).jpeg',
+    previewUrl: '../../../assets/1 (11).jpeg'
   },
 ];
