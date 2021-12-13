@@ -1,31 +1,81 @@
-<div class="basic-container">
-	<h2>Wedding</h2>
-	<gallery id="wedding" fluid [items]="weddingItems"></gallery>
-</div>
-<div class="basic-container">
-	<h2>Birthday Celebration</h2>
-	<gallery id="birthday" fluid [items]="birthdayItems"></gallery>
-</div>
-<div class="basic-container">
-	<h2>Corporate Events</h2>
-	<gallery id="corporate" fluid [items]="corporateItems"></gallery>
-</div>
-<div class="basic-container">
-	<h2>Social Events</h2>
-	<gallery id="societal" fluid [items]="societalItems"></gallery>
+<div class="head">
+  <div class="container main">
+    <div class="row">
+      <div class="col-5">
+        <mat-card class="example-card" type="button" (click)="lightbox.open(0, 'weddingRef')">
+          <mat-card-header>
+            <mat-card-title>Wedding Images</mat-card-title>
+          </mat-card-header>
+          <img mat-card-image src="../../../assets/1 (6).jpeg" alt="Wedding Decoration">
+        </mat-card>
+      </div>
+      <div class="col-2">
+
+      </div>
+      <div class="col-5">
+        <mat-card class="example-card" type="button" (click)="lightbox.open(0, 'birthdayRef')">
+          <mat-card-header>
+            <mat-card-title>Birthday Images</mat-card-title>
+          </mat-card-header>
+          <img mat-card-image src="../../../assets/1 (8).jpeg" alt="Birthday Decoration">
+        </mat-card>
+      </div>
+    </div>
+    <div class="row cards">
+      <div class="col-5">
+        <mat-card class="example-card" type="button" (click)="lightbox.open(0, 'corporateRef')">
+          <mat-card-header>
+            <mat-card-title>Corporate Event Images</mat-card-title>
+          </mat-card-header>
+          <img mat-card-image src="../../../assets/1 (7).jpeg" alt="Corporate Decoration">
+        </mat-card>
+      </div>
+      <div class="col-2">
+
+      </div>
+      <div class="col-5">
+        <mat-card class="example-card" type="button" (click)="lightbox.open(0, 'societalRef')">
+          <mat-card-header>
+            <mat-card-title>Societal Event Images</mat-card-title>
+          </mat-card-header>
+          <img mat-card-image src="../../../assets/1 (11).jpeg" alt="Societal Decoration">
+        </mat-card>
+      </div>
+    </div>
 </div>
 
-<div class="lightbox-example">
-	<h2>Lightbox Example</h2>
-	<button mat-raised-button color="primary" (click)="lightbox.open(0)">Open Lightbox</button>
 
 
-	<button mat-raised-button color="accent" (click)="lightbox.open(0, 'lightbox', {panelClass: 'fullscreen'})">Open Lightbox in fullscreen mode</button>
-</div>
+  <!-- <div class="basic-container">
+    <h2 (click)="lightbox.open(0, 'weddingRef')">Wedding</h2>
+    <gallery id="wedding" fluid [items]="weddingItems"></gallery>
+  </div>
+  <div class="basic-container">
+    <h2 (click)="lightbox.open(0, 'birthdayRef')">Birthday Celebration</h2>
+    <gallery id="birthday" fluid [items]="birthdayItems"></gallery>
+  </div>
+  <div class="basic-container">
+    <h2 (click)="lightbox.open(0, 'corporateRef')">Corporate Events</h2>
+    <gallery id="corporate" fluid [items]="corporateItems"></gallery>
+  </div>
+  <div class="basic-container">
+    <h2 (click)="lightbox.open(0, 'societalRef')">Social Events</h2>
+    <gallery id="societal" fluid [items]="societalItems"></gallery>
+  </div>
+</div> -->
 
-<div class="gallerize-example">
-	<h2>Gallerize Example</h2>
-	<p class="container" gallerize>
-		<img *ngFor="let img of weddingData" [src]="img.srcUrl" alt="images">
-	</p>
-</div>
+
+<!--<div class="lightbox-example">-->
+<!--	<h2>Lightbox Example</h2>-->
+<!--	<button mat-raised-button color="primary" (click)="lightbox.open(0)">Open Lightbox</button>-->
+
+
+<!--	<button mat-raised-button color="accent" (click)="lightbox.open(0, 'lightbox', {panelClass: 'fullscreen'})">Open Lightbox in fullscreen mode</button>-->
+<!--</div>-->
+
+<!--<div class="gallerize-example">-->
+<!--	<h2>Gallerize Example</h2>-->
+<!--	<p class="container" gallerize>-->
+<!--		<img *ngFor="let img of weddingData" [src]="img.srcUrl" alt="images">-->
+<!--	</p>-->
+<!--</div>-->

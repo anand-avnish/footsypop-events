@@ -27,25 +27,50 @@ export class GalleryComponent implements OnInit {
 
     /** Basic Gallery Example */
 
-    // Creat gallery items
+    // Create gallery items
     this.weddingItems = this.weddingData.map(item => new ImageItem({ src: item.srcUrl, thumb: item.previewUrl }));
     this.birthdayItems = this.birthdayData.map(item => new ImageItem({ src: item.srcUrl, thumb: item.previewUrl }));
     this.corporateItems = this.corporateData.map(item => new ImageItem({ src: item.srcUrl, thumb: item.previewUrl }));
     this.societalItems = this.societalData.map(item => new ImageItem({ src: item.srcUrl, thumb: item.previewUrl }));
 
     /** Lightbox Example */
-
     // Get a lightbox gallery ref
-    const lightboxRef = this.gallery.ref('lightbox');
+    const weddingRef = this.gallery.ref('weddingRef');
 
+    weddingRef.load(this.weddingItems);
     // Add custom gallery config to the lightbox (optional)
-    lightboxRef.setConfig({
+    weddingRef.setConfig({
       imageSize: ImageSize.Contain,
       thumbPosition: ThumbnailsPosition.Top
     });
 
     // Load items into the lightbox gallery ref
-    lightboxRef.load(this.weddingItems);
+    const birthdayRef = this.gallery.ref('birthdayRef');
+
+    birthdayRef.load(this.birthdayItems);
+    // Add custom gallery config to the lightbox (optional)
+    birthdayRef.setConfig({
+      imageSize: ImageSize.Contain,
+      thumbPosition: ThumbnailsPosition.Top
+    });
+
+    const corporateRef = this.gallery.ref('corporateRef');
+
+    corporateRef.load(this.corporateItems);
+    // Add custom gallery config to the lightbox (optional)
+    corporateRef.setConfig({
+      imageSize: ImageSize.Contain,
+      thumbPosition: ThumbnailsPosition.Top
+    });
+
+    const societalRef = this.gallery.ref('societalRef');
+
+    societalRef.load(this.societalItems);
+    // Add custom gallery config to the lightbox (optional)
+    societalRef.setConfig({
+      imageSize: ImageSize.Contain,
+      thumbPosition: ThumbnailsPosition.Top
+    });
   }
 }
 

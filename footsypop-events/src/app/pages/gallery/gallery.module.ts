@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 
 import { GalleryModule } from 'ng-gallery';
 import { LightboxModule } from 'ng-gallery/lightbox';
+import {MatCardModule} from '@angular/material/card';
 
 const route = [
   { path: '', component: GalleryComponent },
@@ -19,6 +20,7 @@ const route = [
     CommonModule,
     GalleryModule,
     LightboxModule,
+    MatCardModule,
     RouterModule.forChild(route)
   ]
 })
