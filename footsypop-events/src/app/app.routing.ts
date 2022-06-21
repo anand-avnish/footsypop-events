@@ -6,7 +6,7 @@ const routes: Routes = [
 	{ path: "", loadChildren: () => import('src/app/layout/layout.module').then(m => m.LayoutModule) }
 ];
 @NgModule({
-	imports: [RouterModule.forRoot(routes)],
+	imports: [RouterModule.forRoot(routes, {scrollPositionRestoration: 'enabled'})],
 	exports: [RouterModule]
 })
 

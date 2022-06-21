@@ -1,6 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Varela+Round&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 .head{
   width: 100%;
   height: 30vh;
+}
+
+.main{
+  background-color: black;
+  color: white;
+  /* padding-top: 30px; */
+  padding-bottom: 30px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.hd{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:black;
+  opacity:0.6;
+  z-index:1;
+}
+
+.header{
+  /* position: absolute; */
+  width: 100%;
+  height: 30vh;
+  background-image:url(../../../assets/cont.jpg);
+  background-size:cover;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index:0;
+}
+
+.title{
+  margin: auto auto;
+  /* text-shadow: black 2px 2px 1px; */
+  font-family: 'Great Vibes', cursive;
+  /* margin: 0; */
+  font-size: 6em;
+  color: white;
+  text-shadow: 0 0 0.1em #FA7A4C, 0 0 0.15em #FA7A4C;
+  z-index:2;
+  position: absolute;
+  /* vertical-align: middle; */
 }
 
 .example-form {
@@ -16,7 +65,7 @@
 .form{
   margin-top: 20px;
   margin-bottom: 20px;
-  /* background-color:#ffd37b; */
+  background-color:black;
 }
 
 .contact{
@@ -45,3 +94,48 @@
 .fields{
   padding-left: 5%;
 }
+
+/* .form-cont{
+  background-color: white;
+} */
+/*
+.mat-form-field-appearance-outline .mat-form-field-outline-thick {
+  color: white;
+}
+
+mat-form-field .mat-form-field {
+  color:white;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: white;
+}
+
+.example-full-width.mat-form-field-appearance-legacy .mat-form-field-underline,
+.example-full-width.mat-form-field-appearance-legacy .mat-form-field-ripple,
+.example-full-width.mat-form-field-appearance-legacy.mat-focused
+    .mat-form-field-underline,
+.example-full-width.mat-form-field-appearance-legacy.mat-focused
+    .mat-form-field-ripple {
+    background-color: white;
+}
+
+::ng-deep .mat-form-field-underline, ::ng-deep .mat-form-field-ripple {
+  background-color: white !important;
+}
+
+.example-full-width.mat-form-field-appearance-legacy .mat-form-field-label,
+.example-full-width.mat-form-field-appearance-legacy.mat-focused
+    .mat-form-field-label {
+    color: white;
+}
+.example-full-width.mat-form-field-appearance-legacy .mat-input-element {
+    caret-color: white;
+  color: white;
+}
+
+.mat-input-element{
+  color:white !important;
+  background-color: white !important;
+  caret-color: white !important;
+} */

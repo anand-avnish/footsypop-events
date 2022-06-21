@@ -3,3 +3,18 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.mat-form-field-label{
+  color:white !important;
+}
+
+.mat-select-value{
+  color:white !important;
+}
+
+.mat-select-arrow{
+  color:white !important;
+}
+
+.mat-form-field-underline{
+  background-color:white !important;
+}

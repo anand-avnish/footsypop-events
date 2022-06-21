@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 .bi {
   vertical-align: -.125em;
   fill: currentColor;
@@ -7,7 +9,7 @@
   padding-top: 40px;
   padding-left: 60px;
   padding-right: 60px;
-  background-color: rgb(29, 28, 28);
+  background-color: black;
   color: white;
 }
 
@@ -42,4 +44,9 @@
 
 .cont{
   margin-top:10px;
+}
+
+.text-muted{
+  color: #FA7A4C !important;
+  font-family: 'Montserrat', sans-serif !important;
 }

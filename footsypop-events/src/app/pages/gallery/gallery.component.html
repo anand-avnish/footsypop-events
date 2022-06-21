@@ -1,6 +1,33 @@
+<div class="header">
+  <div class="hd">
+  </div>
+  <h1 class="title">
+    Image Gallery
+  </h1>
+</div>
 <div class="head">
   <div class="container main">
     <div class="row">
+      <div class="wedImg" type="button" (click)="lightbox.open(0, 'weddingRef')">
+        <div class="wed"></div>
+        <h2 class="text">WEDDING</h2>
+      </div>
+      <div class="wedImg2" type="button" (click)="lightbox.open(0, 'birthdayRef')">
+        <div class="birth"></div>
+        <h2 class="text">BIRTHDAY</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="wedImg" type="button" (click)="lightbox.open(0, 'corporateRef')">
+        <div class="corp"></div>
+        <h2 class="text">CORPORATE</h2>
+      </div>
+      <div class="wedImg2" type="button" (click)="lightbox.open(0, 'societalRef')">
+        <div class="societal"></div>
+        <h2 class="text">SOCIETAL</h2>
+      </div>
+    </div>
+    <!-- <div class="row">
       <div class="col-5">
         <mat-card class="example-card" type="button" (click)="lightbox.open(0, 'weddingRef')">
           <mat-card-header>
@@ -41,7 +68,7 @@
           <img mat-card-image src="../../../assets/1 (11).jpeg" alt="Societal Decoration">
         </mat-card>
       </div>
-    </div>
+    </div> -->
 </div>
 
 

@@ -8,13 +8,11 @@ const LAYOUT_ROUTES: Routes = [
 		component: LayoutComponent,
 		children: [
 
-
 			{ path: "", redirectTo: "home", pathMatch: "full", },
-
-      {
-        path: "home",
-        loadChildren: () => import('src/app/pages/home/home.module').then(m => m.HomeModule)
-      },
+			{
+				path: "home",
+				loadChildren: () => import('src/app/pages/home/home.module').then(m => m.HomeModule)
+			},
 			{
 				path: "about",
 				loadChildren: () => import('src/app/pages/about/about.module').then(m => m.AboutModule)
@@ -23,7 +21,7 @@ const LAYOUT_ROUTES: Routes = [
 				path: "service",
 				loadChildren: () => import('src/app/pages/service/service.module').then(m => m.ServiceModule)
 			},
-      {
+			{
 				path: "gallery",
 				loadChildren: () => import('src/app/pages/gallery/gallery.module').then(m => m.GallModule)
 			},

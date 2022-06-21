@@ -10,6 +10,8 @@ import { ContactComponent } from './contact.component';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
+import { HttpClientModule } from '@angular/common/http';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 const route = [
   { path: '', component: ContactComponent },
@@ -30,6 +32,8 @@ const route = [
     MatDatepickerModule,
     MatSelectModule,
     MatButtonModule,
+    HttpClientModule,
+    MatSnackBarModule,
     RouterModule.forChild(route)
   ]
 })

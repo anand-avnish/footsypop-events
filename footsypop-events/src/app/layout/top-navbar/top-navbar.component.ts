@@ -31,6 +31,7 @@ export class TopNavbarComponent implements OnInit {
   ){}
 
   ngOnInit(): void {
+    this.fixHeader();
     this.actRoute.params.subscribe((params: Params) => {
       this.parsedURL = this.router.url.split('/');
       console.log(`/${this.parsedURL[1]}`);
@@ -42,6 +43,16 @@ export class TopNavbarComponent implements OnInit {
       } else {
           tab.isActive = false;
       }
+    }
+  }
+
+  fixHeader(){
+    console.log("In func");
+
+    if(window.scrollX>116){
+      let r=document.getElementById("routes");
+      // r.style.position="fixed";
+      console.log(r);
     }
   }
 

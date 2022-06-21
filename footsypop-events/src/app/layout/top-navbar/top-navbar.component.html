@@ -1,10 +1,21 @@
-<div class="px-3 py-2 bg-dark text-white">
+<div class="px-3 py-2 bg-dark text-white main">
   <div class="container">
+    <div class="cont">
+      <ul class="list-unstyled d-flex cont py-2">
+        <li class="ms-3"><a rel="noopener" class="social" aria-label="Facebook" href="https://www.facebook.com/Footsypop-Events" target="_blank"><i class="bi bi-facebook face"></i></a></li>
+        <li class="ms-3"><a class="link-dark" aria-label="Instagram" href="https://www.instagram.com/footsypopevents" target="_blank"><i class="bi bi-instagram face"></i></a></li>
+        <li class="ms-3"><a class="link-dark" aria-label="Twitter" href="https://twitter.com/footsypop" target="_blank"><i class="bi bi-twitter face"></i></a></li>
+        <li class="ms-3"><a class="link-dark" aria-label="Linkedin" href="https://www.linkedin.com/in/footsy-popevents" target="_blank"><i class="bi bi-linkedin face"></i></a></li>
+        <li class="ms-3"><a class="link-dark" aria-label="Youtube" href="https://www.youtube.com/channel/UCwrkUUbpiLrFTFSnJY4OD-A" target="_blank"><i class="bi bi-youtube face"></i></a></li>
+        <!-- <li class="ms-3"><a class="link-dark" aria-label="Facebook" href="https://www.facebook.com/Footsypopevents"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li> -->
+      </ul>
+    </div>
     <header class="d-flex flex-wrap justify-content-center">
-      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none logo">
         <!-- <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg> -->
-        <img class="bi me-4" height="60" src="../assets/logo.png" alt="Logo">
+        <img class="bi me-4" height="120" src="../assets/logo.png" alt="Logo">
       </a>
+    </header>
 
       <!-- <ul class="nav nav-pills" style="padding-top:10px">
         <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
@@ -13,13 +24,14 @@
         <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
         <li class="nav-item"><a href="#" class="nav-link">About</a></li>
       </ul> -->
-      <ul class="nav nav-pills" style="padding-top:10px">
-        <li class="nav-item" *ngFor="let tab of navTabs">
-          <button class="nav-link" (click)="linkClicked(tab.routerPath)" [ngClass]="{'active': tab.isActive}" >
-            {{tab.displayName}}
-          </button>
-        </li>
-      </ul>
-    </header>
   </div>
+</div>
+<div id="routes" class="routes d-flex justify-content-center py-2 bg-dark">
+  <ul class="nav nav-pills pills">
+    <li class="nav-item" *ngFor="let tab of navTabs">
+      <button class="nav-link" (click)="linkClicked(tab.routerPath)" [ngClass]="{'active': tab.isActive}" >
+        {{tab.displayName}}
+      </button>
+    </li>
+  </ul>
 </div>

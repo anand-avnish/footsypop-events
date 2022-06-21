@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Varela+Round&display=swap");
+
+
 .b-example-divider {
   height: 3rem;
   background-color: rgba(0, 0, 0, .1);
@@ -13,7 +17,7 @@
 .about{
   min-height: 90vh;
   /* background-color: black; */
-  background-image: url('../../../assets/shine-wedding-altar-newlyweds-stands-backyard-decorated-with-balloons_8353-8415.jpg');
+  background-image: url('../../../assets/abt bgr.jpg');
   background-size: cover;
   /* filter: blur(8px);
   -webkit-filter: blur(8px); */
@@ -27,7 +31,8 @@
 } */
 
 .logo:hover{
-  transform:translate(-5px, -5px);
+  transform:translate(-2px, -2px);
+  transform:scale(1.1);
 }
 
 .blackO{
@@ -40,14 +45,13 @@
   /* z-index: 999; */
 }
 
-.head{
-  color: #fc575e;
+/* .head{
+  color: #FA7A4C;
   font-style: italic;
-  /* font-family:'Courier New', Courier, monospace; */
   font-family: 'Courgette', cursive;
   text-shadow: black 2px 2px 1px;
   font-size: 60px;
-}
+} */
 
 .para{
   font-size: 25px;
@@ -89,35 +93,81 @@
 }
 
 .main2{
-  /* height:120vh; */
-  background: radial-gradient(circle, rgba(250,122,76,1) 0%, rgba(255,255,255,1) 54%);
-  color: black;
+  /* height:80vh; */
+  width: 100%;
+  position: relative;
+  /* background: radial-gradient(circle, rgba(250,122,76,1), rgb(221, 154, 99), rgba(255,255,255,1) 84% ); */
+  color: white;
   padding-top: 30px;
   padding-bottom: 30px;
+  background: linear-gradient(315deg, rgb(247, 180, 44,0.9), rgb(252, 87, 94,0.9));
+  background-size: 200% 200%;
+  animation: Gradient 7s ease infinite;
+  overflow: hidden;
 }
 
 .video{
-  box-shadow: 10px 10px 5px #f8f4f3;
-  width: 90%;
+  box-shadow: 8px 8px 25px 0 rgb(255, 255, 255,.5);
+  width: 100%;
 }
 
 .heading{
-  color: #fc575e;
-  /* font-style: italic; */
-  font-family: 'Roboto', sans-serif;
-  text-shadow: black 1px 1px 1px;
+  /* color: white; */
+  font-family: 'Varela Round', sans-serif;
+  font-size: 3em;
+  font-weight:bolder;
+  text-shadow: black 0px 2px 0px;
   /* text-shadow: 4px 4px 2px #FA7A4C; */
 }
 
 .heading2{
-  color: #fc575e;
+  /* font-family: 'Mr Dafoe'; */
+  font-family: 'Varela Round', sans-serif;
+  font-size: 3em;
+  font-weight:bolder;
+  /* color: #fc575e; */
   /* font-style: italic; */
-  font-family: 'Roboto', sans-serif;
-  text-shadow: white 1px 1px 1px;
+  /* font-family: 'Roboto', sans-serif; */
+  /* text-shadow: white 1px 1px 1px; */
   /* text-shadow: 4px 4px 2px #FA7A4C; */
 }
 
-.event{
-  text-align:center;
+h1 {
+  font-family: 'Great Vibes', cursive;
+  margin: 0;
+  font-size: 6em;
+  color: white;
+  text-shadow: 0 0 0.1em #FA7A4C, 0 0 0.15em #FA7A4C;
+}
+
+.grad{
+  width: fit-content;
+  margin: 0 auto;
+  background: linear-gradient(315deg, #f7b42c, #fc575e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
   margin-bottom:10px;
+}
+
+.grad2{
+  width: fit-content;
+  margin: 0 auto;
+  background: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-bottom:10px;
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
