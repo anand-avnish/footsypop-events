@@ -15,6 +15,7 @@
 
 .copy{
   margin-top:20px;
+  display: flex;
 }
 
 .face{
@@ -49,4 +50,50 @@
 .text-muted{
   color: #FA7A4C !important;
   font-family: 'Montserrat', sans-serif !important;
+}
+
+.links{
+  width: 25%;
+}
+
+.about{
+  width: 54%;
+  offset: 1;
+}
+
+.social{
+  display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+  .links{
+    width:100%;
+  }
+
+  .about{
+    width:100%;
+  }
+
+  .foot{
+    padding: 20px;
+  }
+
+  .nav{
+    display:flex;
+    justify-content: center;
+  }
+
+  .copy{
+    display:block;
+  }
+
+  .copyright{
+    width:100%;
+    display: block;
+  }
+
+  .social{
+    width: 100%;
+    justify-content: center;
+  }
 }

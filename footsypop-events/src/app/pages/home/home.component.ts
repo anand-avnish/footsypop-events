@@ -10,6 +10,7 @@ import { NgForm } from '@angular/forms';
 export class HomeComponent implements OnInit {
 
   slides = [
+    {'image': '../../../assets/trekk.jpeg', 'title':'WEDDING', 'text':'A WEDDING IS A ONCE IN A LIFETIME EXPERIENCE!!!!'},
     {'image': '../../../assets/photos/fig60.jpg', 'title':'WEDDING', 'text':'A WEDDING IS A ONCE IN A LIFETIME EXPERIENCE!!!!'},
     {'image': '../../../assets/photos/fig63.jpg', 'title':'BIRTHDAY', 'text':'WHEN YOU THINK OF SUCH AN EVENT SIMPLY THINK FOOTSYPOP EVENTS!!!!'},
     {'image': '../../../assets/photos/fig39.jpg', 'title':'CORPORATE', 'text':'EVERY EVENT SHOULD BE PERFECT'},

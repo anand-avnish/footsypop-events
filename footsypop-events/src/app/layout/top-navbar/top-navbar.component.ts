@@ -23,6 +23,7 @@ export class TopNavbarComponent implements OnInit {
     new TabModel('Contact', '/contact', false)
   ];
 
+  iserr=false;
   parsedURL: any;
 
   constructor(
@@ -31,12 +32,12 @@ export class TopNavbarComponent implements OnInit {
   ){}
 
   ngOnInit(): void {
-    this.fixHeader();
     this.actRoute.params.subscribe((params: Params) => {
       this.parsedURL = this.router.url.split('/');
       console.log(`/${this.parsedURL[1]}`);
+      if(`${this.parsedURL[1]}`=="404")this.iserr=true;
+      else this.iserr=false;
     });
-
     for(let tab of this.navTabs){
       if(tab.routerPath == `/${this.parsedURL[1]}`){
           tab.isActive = true;
@@ -46,15 +47,15 @@ export class TopNavbarComponent implements OnInit {
     }
   }
 
-  fixHeader(){
-    console.log("In func");
+  // fixHeader(){
+  //   console.log("In func");
 
-    if(window.scrollX>116){
-      let r=document.getElementById("routes");
-      // r.style.position="fixed";
-      console.log(r);
-    }
-  }
+  //   if(window.scrollX>116){
+  //     let r=document.getElementById("routes");
+  //     // r.style.position="fixed";
+  //     console.log(r);
+  //   }
+  // }
 
   linkClicked(link: string){
     console.log(link)

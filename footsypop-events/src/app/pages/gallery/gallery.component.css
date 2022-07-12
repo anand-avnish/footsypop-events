@@ -208,3 +208,24 @@ body{
   position: absolute;
   /* vertical-align: middle; */
 }
+
+@media only screen and (max-width: 600px) {
+  .title{
+    font-size:4em;
+  }
+
+  .wedImg2{
+    width:100%;
+    margin-left:0px;
+  }
+
+  .wedImg{
+    width:100%;
+    margin-right:0px;
+  }
+
+  .text{
+    font-size:2.5em;
+  }
+}
+

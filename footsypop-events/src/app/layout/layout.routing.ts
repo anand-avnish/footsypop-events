@@ -28,12 +28,20 @@ const LAYOUT_ROUTES: Routes = [
 			{
 				path: "contact",
 				loadChildren: () => import('src/app/pages/contact/contact.module').then(m => m.ContactModule)
-			}
+			},
+			{
+				path: "trekking",
+				loadChildren: () => import('src/app/pages/events/trekking/trekking.module').then(m => m.TrekkingModule)
+			},
+      {
+        path: "404",
+				loadChildren: () => import('src/app/pages/not-found/not-found.module').then(m => m.NotFoundModule)
+			},
 		]
 	},
 
 	// 404 Page Not Found
-	{ path: "**", redirectTo: "" }
+	{ path: "**", redirectTo: '404' }
 ];
 
 export const LayoutRoutingModule = RouterModule.forChild(LAYOUT_ROUTES);

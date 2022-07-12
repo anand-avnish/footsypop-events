@@ -30,6 +30,10 @@
   box-shadow: black 3px 0px 2px;
 } */
 
+.logo{
+  width: 300px;
+}
+
 .logo:hover{
   transform:translate(-2px, -2px);
   transform:scale(1.1);
@@ -170,4 +174,59 @@ h1 {
   100% {
     background-position: 0% 50%;
   }
+}
+
+.cl7{
+  width: 58%;
+}
+
+.cl6{
+  width: 50%;
+}
+
+.cl5{
+  width: 42%;
+}
+
+@media only screen and (max-width: 600px) {
+  h1{
+    font-size:3em;
+  }
+
+  .logo{
+    width:200px;
+  }
+
+  .para{
+    font-size: 16px;
+  }
+
+  .heading, .heading2{
+    font-size:1.8em;
+  }
+
+  p{
+    font-size: 16px;
+    text-align:justify;
+  }
+
+  .main, .main2{
+    font-size: 16px;
+  }
+
+  .cl7{
+    width: 100%;
+    margin-top:10px;
+  }
+
+  .cl6{
+    margin-top:10px;
+    width: 100%;
+  }
+
+  .cl5{
+    width: 100%;
+    margin-top:10px;
+  }
+
 }

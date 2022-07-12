@@ -179,3 +179,69 @@
     background-position: 0% 50%;
   }
 }
+
+.cl7{
+  width: 58%;
+}
+
+.cl6{
+  width: 50%;
+}
+
+.cl5{
+  width: 42%;
+}
+
+@media only screen and (max-width: 600px) {
+  .title{
+    font-size:4em;
+  }
+
+  .video{
+    margin-left: 16px;
+  }
+
+  .logo{
+    width:200px;
+  }
+
+  .para{
+    font-size: 16px;
+  }
+
+  .heading, .heading2{
+    font-size:1.8em;
+  }
+
+  p{
+    font-size: 16px;
+    text-align:justify;
+  }
+
+  .main, .main2{
+    font-size: 16px;
+  }
+
+  .cl7{
+    width: 100%;
+    margin-top:15px;
+  }
+
+  .cl6{
+    width: 100%;
+    margin-top:15px;
+  }
+
+  .cl5{
+    width: 100%;
+    margin-top:15px;
+  }
+
+  .list{
+    font-size:17px;
+  }
+
+  :host ::ng-deep .mat-tab-header{
+    top:14vh !important;
+  }
+}

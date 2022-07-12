@@ -50,7 +50,7 @@ export class ContactComponent implements OnInit {
       console.log(value);
       try {
         const headers = await new HttpHeaders({ 'Content-Type': 'application/json' });
-        let res = this.http.post('https://usebasin.com/f/96d1614ffd69',
+        let res = this.http.post('https://usebasin.com/f/e5b68a625812',
           {Name:form.name, Email:form.email, Mobile_Number:form.phone, Event: form.event, Message: form.message},
           { 'headers': headers }).subscribe((response)=>{
             // console.log(response);
